@@ -1,0 +1,9 @@
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\obj\Debug\QvAffinityConfigurator.csprojResolveAssemblyReference.cache
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\obj\Debug\QvAffinityConfigurator.Form1.resources
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\obj\Debug\QvAffinityConfigurator.Properties.Resources.resources
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\obj\Debug\QvAffinityConfigurator.csproj.GenerateResource.Cache
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\bin\Debug\QvAffinityConfigurator.exe
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\bin\Debug\QvAffinityConfigurator.pdb
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\obj\Debug\QvAffinityConfigurator.exe
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\obj\Debug\QvAffinityConfigurator.pdb
+C:\Users\rfn\Projects\GitHub\QvAffinityConfigurator\QvAffinityConfigurator\bin\Debug\QvAffinityConfigurator.exe.config
