@@ -854,7 +854,7 @@
             this.groupPriority.Controls.Add(this.cpuPriorityHigh);
             this.groupPriority.Location = new System.Drawing.Point(19, 198);
             this.groupPriority.Name = "groupPriority";
-            this.groupPriority.Size = new System.Drawing.Size(149, 96);
+            this.groupPriority.Size = new System.Drawing.Size(120, 96);
             this.groupPriority.TabIndex = 75;
             this.groupPriority.TabStop = false;
             this.groupPriority.Text = "CPU Priority";
@@ -897,7 +897,7 @@
             // 
             // txtMaxQvbAdmin
             // 
-            this.txtMaxQvbAdmin.Location = new System.Drawing.Point(105, 20);
+            this.txtMaxQvbAdmin.Location = new System.Drawing.Point(168, 62);
             this.txtMaxQvbAdmin.Name = "txtMaxQvbAdmin";
             this.txtMaxQvbAdmin.Size = new System.Drawing.Size(44, 20);
             this.txtMaxQvbAdmin.TabIndex = 76;
@@ -906,19 +906,19 @@
             // groupMisc
             // 
             this.groupMisc.Controls.Add(this.txtMaxQvbDist);
+            this.groupMisc.Controls.Add(this.txtMaxQvbAdmin);
             this.groupMisc.Controls.Add(this.label2);
             this.groupMisc.Controls.Add(this.label1);
-            this.groupMisc.Controls.Add(this.txtMaxQvbAdmin);
-            this.groupMisc.Location = new System.Drawing.Point(187, 198);
+            this.groupMisc.Location = new System.Drawing.Point(158, 198);
             this.groupMisc.Name = "groupMisc";
-            this.groupMisc.Size = new System.Drawing.Size(205, 96);
+            this.groupMisc.Size = new System.Drawing.Size(234, 96);
             this.groupMisc.TabIndex = 76;
             this.groupMisc.TabStop = false;
-            this.groupMisc.Text = "Miscellanous";
+            this.groupMisc.Text = "Engine";
             // 
             // txtMaxQvbDist
             // 
-            this.txtMaxQvbDist.Location = new System.Drawing.Point(105, 46);
+            this.txtMaxQvbDist.Location = new System.Drawing.Point(168, 29);
             this.txtMaxQvbDist.Name = "txtMaxQvbDist";
             this.txtMaxQvbDist.Size = new System.Drawing.Size(44, 20);
             this.txtMaxQvbDist.TabIndex = 79;
@@ -927,22 +927,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 50);
+            this.label2.Location = new System.Drawing.Point(18, 23);
+            this.label2.MaximumSize = new System.Drawing.Size(150, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(138, 26);
             this.label2.TabIndex = 78;
-            this.label2.Text = "MaxQvbDist:";
+            this.label2.Text = "Max simultaneous QlikView engines for distribution:";
             this.toolTip1.SetToolTip(this.label2, "The number of QVBs that the QlikView Distribution Service can send tasks to simul" +
         "taneously.");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 23);
+            this.label1.Location = new System.Drawing.Point(18, 56);
+            this.label1.MaximumSize = new System.Drawing.Size(150, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(138, 26);
             this.label1.TabIndex = 77;
-            this.label1.Text = "MaxQvbAdmin:";
+            this.label1.Text = "Max simultaneous QlikView engines for administration:";
             this.toolTip1.SetToolTip(this.label1, "The number of simultaneous QVBs the QlikView Distribution Service can use for the" +
         " management of tasks in the Management Console. ");
             // 
