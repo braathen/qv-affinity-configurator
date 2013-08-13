@@ -87,18 +87,18 @@ namespace QvAffinityConfigurator
 
             var checkedButton = groupPriority.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
 
-            switch (checkedButton.Name)
-            {
-                case "cpuPriorityHigh":
-                    DistributionServiceSettings.Advanced.CPUPriority = CPUPriority.High;
-                    break;
-                case "cpuPriorityNormal":
-                    DistributionServiceSettings.Advanced.CPUPriority = CPUPriority.Normal;
-                    break;
-                case "cpuPriorityLow":
-                    DistributionServiceSettings.Advanced.CPUPriority = CPUPriority.Low;
-                    break;
-            }
+            //switch (checkedButton.Name)
+            //{
+            //    case "cpuPriorityHigh":
+            //        DistributionServiceSettings.Advanced.CPUPriority = CPUPriority.High;
+            //        break;
+            //    case "cpuPriorityNormal":
+            //        DistributionServiceSettings.Advanced.CPUPriority = CPUPriority.Normal;
+            //        break;
+            //    case "cpuPriorityLow":
+            //        DistributionServiceSettings.Advanced.CPUPriority = CPUPriority.Low;
+            //        break;
+            //}
 
             DistributionServiceSettings.Advanced.MaxQvbAdmin = Convert.ToInt32(txtMaxQvbAdmin.Text);
             DistributionServiceSettings.Advanced.MaxQvbDist = Convert.ToInt32(txtMaxQvbDist.Text);

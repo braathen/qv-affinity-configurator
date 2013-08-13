@@ -96,22 +96,22 @@
             this.checkBox64 = new System.Windows.Forms.CheckBox();
             this.groupAffinity = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.groupPriority = new System.Windows.Forms.GroupBox();
-            this.cpuPriorityLow = new System.Windows.Forms.RadioButton();
-            this.cpuPriorityNormal = new System.Windows.Forms.RadioButton();
-            this.cpuPriorityHigh = new System.Windows.Forms.RadioButton();
-            this.txtMaxQvbAdmin = new System.Windows.Forms.TextBox();
-            this.groupMisc = new System.Windows.Forms.GroupBox();
-            this.txtMaxQvbDist = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMaxQvbAdmin = new System.Windows.Forms.TextBox();
+            this.txtMaxQvbDist = new System.Windows.Forms.TextBox();
+            this.groupMisc = new System.Windows.Forms.GroupBox();
+            this.cpuPriorityHigh = new System.Windows.Forms.RadioButton();
+            this.cpuPriorityNormal = new System.Windows.Forms.RadioButton();
+            this.cpuPriorityLow = new System.Windows.Forms.RadioButton();
+            this.groupPriority = new System.Windows.Forms.GroupBox();
             this.groupAffinity.SuspendLayout();
-            this.groupPriority.SuspendLayout();
-            this.groupMisc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.groupMisc.SuspendLayout();
+            this.groupPriority.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboQvdServices
@@ -847,53 +847,39 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // groupPriority
+            // btnRefresh
             // 
-            this.groupPriority.Controls.Add(this.cpuPriorityLow);
-            this.groupPriority.Controls.Add(this.cpuPriorityNormal);
-            this.groupPriority.Controls.Add(this.cpuPriorityHigh);
-            this.groupPriority.Location = new System.Drawing.Point(19, 198);
-            this.groupPriority.Name = "groupPriority";
-            this.groupPriority.Size = new System.Drawing.Size(120, 96);
-            this.groupPriority.TabIndex = 75;
-            this.groupPriority.TabStop = false;
-            this.groupPriority.Text = "CPU Priority";
+            this.btnRefresh.Location = new System.Drawing.Point(236, 316);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 77;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // cpuPriorityLow
+            // label1
             // 
-            this.cpuPriorityLow.AutoSize = true;
-            this.cpuPriorityLow.Location = new System.Drawing.Point(21, 65);
-            this.cpuPriorityLow.Name = "cpuPriorityLow";
-            this.cpuPriorityLow.Size = new System.Drawing.Size(45, 17);
-            this.cpuPriorityLow.TabIndex = 2;
-            this.cpuPriorityLow.TabStop = true;
-            this.cpuPriorityLow.Text = "Low";
-            this.cpuPriorityLow.UseVisualStyleBackColor = true;
-            this.cpuPriorityLow.CheckedChanged += new System.EventHandler(this.SettingsChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 56);
+            this.label1.MaximumSize = new System.Drawing.Size(150, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 26);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Max simultaneous QlikView engines for administration:";
+            this.toolTip1.SetToolTip(this.label1, "The number of simultaneous QVBs the QlikView Distribution Service can use for the" +
+        " management of tasks in the Management Console. ");
             // 
-            // cpuPriorityNormal
+            // label2
             // 
-            this.cpuPriorityNormal.AutoSize = true;
-            this.cpuPriorityNormal.Location = new System.Drawing.Point(21, 42);
-            this.cpuPriorityNormal.Name = "cpuPriorityNormal";
-            this.cpuPriorityNormal.Size = new System.Drawing.Size(58, 17);
-            this.cpuPriorityNormal.TabIndex = 1;
-            this.cpuPriorityNormal.TabStop = true;
-            this.cpuPriorityNormal.Text = "Normal";
-            this.cpuPriorityNormal.UseVisualStyleBackColor = true;
-            this.cpuPriorityNormal.CheckedChanged += new System.EventHandler(this.SettingsChanged);
-            // 
-            // cpuPriorityHigh
-            // 
-            this.cpuPriorityHigh.AutoSize = true;
-            this.cpuPriorityHigh.Location = new System.Drawing.Point(21, 19);
-            this.cpuPriorityHigh.Name = "cpuPriorityHigh";
-            this.cpuPriorityHigh.Size = new System.Drawing.Size(47, 17);
-            this.cpuPriorityHigh.TabIndex = 0;
-            this.cpuPriorityHigh.TabStop = true;
-            this.cpuPriorityHigh.Text = "High";
-            this.cpuPriorityHigh.UseVisualStyleBackColor = true;
-            this.cpuPriorityHigh.CheckedChanged += new System.EventHandler(this.SettingsChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 23);
+            this.label2.MaximumSize = new System.Drawing.Size(150, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 26);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Max simultaneous QlikView engines for distribution:";
+            this.toolTip1.SetToolTip(this.label2, "The number of QVBs that the QlikView Distribution Service can send tasks to simul" +
+        "taneously.");
             // 
             // txtMaxQvbAdmin
             // 
@@ -902,6 +888,14 @@
             this.txtMaxQvbAdmin.Size = new System.Drawing.Size(44, 20);
             this.txtMaxQvbAdmin.TabIndex = 76;
             this.txtMaxQvbAdmin.TextChanged += new System.EventHandler(this.SettingsChanged);
+            // 
+            // txtMaxQvbDist
+            // 
+            this.txtMaxQvbDist.Location = new System.Drawing.Point(168, 29);
+            this.txtMaxQvbDist.Name = "txtMaxQvbDist";
+            this.txtMaxQvbDist.Size = new System.Drawing.Size(44, 20);
+            this.txtMaxQvbDist.TabIndex = 79;
+            this.txtMaxQvbDist.TextChanged += new System.EventHandler(this.SettingsChanged);
             // 
             // groupMisc
             // 
@@ -916,47 +910,54 @@
             this.groupMisc.TabStop = false;
             this.groupMisc.Text = "Engine";
             // 
-            // txtMaxQvbDist
+            // cpuPriorityHigh
             // 
-            this.txtMaxQvbDist.Location = new System.Drawing.Point(168, 29);
-            this.txtMaxQvbDist.Name = "txtMaxQvbDist";
-            this.txtMaxQvbDist.Size = new System.Drawing.Size(44, 20);
-            this.txtMaxQvbDist.TabIndex = 79;
-            this.txtMaxQvbDist.TextChanged += new System.EventHandler(this.SettingsChanged);
+            this.cpuPriorityHigh.AutoSize = true;
+            this.cpuPriorityHigh.Location = new System.Drawing.Point(21, 19);
+            this.cpuPriorityHigh.Name = "cpuPriorityHigh";
+            this.cpuPriorityHigh.Size = new System.Drawing.Size(47, 17);
+            this.cpuPriorityHigh.TabIndex = 0;
+            this.cpuPriorityHigh.TabStop = true;
+            this.cpuPriorityHigh.Text = "High";
+            this.cpuPriorityHigh.UseVisualStyleBackColor = true;
+            this.cpuPriorityHigh.CheckedChanged += new System.EventHandler(this.SettingsChanged);
             // 
-            // label2
+            // cpuPriorityNormal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 23);
-            this.label2.MaximumSize = new System.Drawing.Size(150, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 26);
-            this.label2.TabIndex = 78;
-            this.label2.Text = "Max simultaneous QlikView engines for distribution:";
-            this.toolTip1.SetToolTip(this.label2, "The number of QVBs that the QlikView Distribution Service can send tasks to simul" +
-        "taneously.");
+            this.cpuPriorityNormal.AutoSize = true;
+            this.cpuPriorityNormal.Location = new System.Drawing.Point(21, 42);
+            this.cpuPriorityNormal.Name = "cpuPriorityNormal";
+            this.cpuPriorityNormal.Size = new System.Drawing.Size(58, 17);
+            this.cpuPriorityNormal.TabIndex = 1;
+            this.cpuPriorityNormal.TabStop = true;
+            this.cpuPriorityNormal.Text = "Normal";
+            this.cpuPriorityNormal.UseVisualStyleBackColor = true;
+            this.cpuPriorityNormal.CheckedChanged += new System.EventHandler(this.SettingsChanged);
             // 
-            // label1
+            // cpuPriorityLow
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 56);
-            this.label1.MaximumSize = new System.Drawing.Size(150, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 26);
-            this.label1.TabIndex = 77;
-            this.label1.Text = "Max simultaneous QlikView engines for administration:";
-            this.toolTip1.SetToolTip(this.label1, "The number of simultaneous QVBs the QlikView Distribution Service can use for the" +
-        " management of tasks in the Management Console. ");
+            this.cpuPriorityLow.AutoSize = true;
+            this.cpuPriorityLow.Location = new System.Drawing.Point(21, 65);
+            this.cpuPriorityLow.Name = "cpuPriorityLow";
+            this.cpuPriorityLow.Size = new System.Drawing.Size(45, 17);
+            this.cpuPriorityLow.TabIndex = 2;
+            this.cpuPriorityLow.TabStop = true;
+            this.cpuPriorityLow.Text = "Low";
+            this.cpuPriorityLow.UseVisualStyleBackColor = true;
+            this.cpuPriorityLow.CheckedChanged += new System.EventHandler(this.SettingsChanged);
             // 
-            // btnRefresh
+            // groupPriority
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(236, 316);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 77;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.groupPriority.Controls.Add(this.cpuPriorityLow);
+            this.groupPriority.Controls.Add(this.cpuPriorityNormal);
+            this.groupPriority.Controls.Add(this.cpuPriorityHigh);
+            this.groupPriority.Enabled = false;
+            this.groupPriority.Location = new System.Drawing.Point(19, 198);
+            this.groupPriority.Name = "groupPriority";
+            this.groupPriority.Size = new System.Drawing.Size(120, 96);
+            this.groupPriority.TabIndex = 75;
+            this.groupPriority.TabStop = false;
+            this.groupPriority.Text = "CPU Priority";
             // 
             // Form1
             // 
@@ -974,11 +975,11 @@
             this.Text = "QlikView Affinity Configurator";
             this.groupAffinity.ResumeLayout(false);
             this.groupAffinity.PerformLayout();
-            this.groupPriority.ResumeLayout(false);
-            this.groupPriority.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.groupMisc.ResumeLayout(false);
             this.groupMisc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.groupPriority.ResumeLayout(false);
+            this.groupPriority.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1052,18 +1053,18 @@
         private System.Windows.Forms.CheckBox checkBox64;
         private System.Windows.Forms.GroupBox groupAffinity;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.GroupBox groupPriority;
-        private System.Windows.Forms.RadioButton cpuPriorityLow;
-        private System.Windows.Forms.RadioButton cpuPriorityNormal;
-        private System.Windows.Forms.RadioButton cpuPriorityHigh;
-        private System.Windows.Forms.TextBox txtMaxQvbAdmin;
-        private System.Windows.Forms.GroupBox groupMisc;
-        private System.Windows.Forms.TextBox txtMaxQvbDist;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMaxQvbAdmin;
+        private System.Windows.Forms.TextBox txtMaxQvbDist;
+        private System.Windows.Forms.GroupBox groupMisc;
+        private System.Windows.Forms.RadioButton cpuPriorityHigh;
+        private System.Windows.Forms.RadioButton cpuPriorityNormal;
+        private System.Windows.Forms.RadioButton cpuPriorityLow;
+        private System.Windows.Forms.GroupBox groupPriority;
     }
 }
 
