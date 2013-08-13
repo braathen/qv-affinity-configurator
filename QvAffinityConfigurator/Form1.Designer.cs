@@ -913,6 +913,7 @@
             // cpuPriorityHigh
             // 
             this.cpuPriorityHigh.AutoSize = true;
+            this.cpuPriorityHigh.Enabled = false;
             this.cpuPriorityHigh.Location = new System.Drawing.Point(21, 19);
             this.cpuPriorityHigh.Name = "cpuPriorityHigh";
             this.cpuPriorityHigh.Size = new System.Drawing.Size(47, 17);
@@ -925,6 +926,7 @@
             // cpuPriorityNormal
             // 
             this.cpuPriorityNormal.AutoSize = true;
+            this.cpuPriorityNormal.Enabled = false;
             this.cpuPriorityNormal.Location = new System.Drawing.Point(21, 42);
             this.cpuPriorityNormal.Name = "cpuPriorityNormal";
             this.cpuPriorityNormal.Size = new System.Drawing.Size(58, 17);
@@ -937,6 +939,7 @@
             // cpuPriorityLow
             // 
             this.cpuPriorityLow.AutoSize = true;
+            this.cpuPriorityLow.Enabled = false;
             this.cpuPriorityLow.Location = new System.Drawing.Point(21, 65);
             this.cpuPriorityLow.Name = "cpuPriorityLow";
             this.cpuPriorityLow.Size = new System.Drawing.Size(45, 17);
@@ -951,13 +954,13 @@
             this.groupPriority.Controls.Add(this.cpuPriorityLow);
             this.groupPriority.Controls.Add(this.cpuPriorityNormal);
             this.groupPriority.Controls.Add(this.cpuPriorityHigh);
-            this.groupPriority.Enabled = false;
             this.groupPriority.Location = new System.Drawing.Point(19, 198);
             this.groupPriority.Name = "groupPriority";
             this.groupPriority.Size = new System.Drawing.Size(120, 96);
             this.groupPriority.TabIndex = 75;
             this.groupPriority.TabStop = false;
             this.groupPriority.Text = "CPU Priority";
+            this.toolTip1.SetToolTip(this.groupPriority, "THIS SHOULD NEVER BE CHANGED!");
             // 
             // Form1
             // 
